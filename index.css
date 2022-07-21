@@ -11,12 +11,9 @@ body {
 
 main {
 	position: relative;
-}
-
-main.animated {
 	opacity: 0;
-	filter: blur(40px);
-	transition: opacity 1.5s ease-in-out, filter 2s ease-in-out;
+	filter: blur(40px);		
+	transition: opacity 1.5s ease-in-out, filter 1.5s ease-in-out;
 }
 
 header {
