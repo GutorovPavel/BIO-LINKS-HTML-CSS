@@ -7,32 +7,44 @@
 		Pavel Gutorov - Bio-link
 	</title>
 	<link rel="stylesheet" href="./index.css">
+	<link rel="preload" href="./images/background.jpg" as="image" />
+	<script>
+		window.addEventListener('DOMContentLoaded', () => {
+			setTimeout(() => {
+				const main = document.querySelector('main')
+				main.style.opacity = 1
+				// main.style.filter = 'blur(0px)'
+			}, 500)
+		})
+	</script>
 </head>
 	<body>
-		<header>
-			<img src="./images/me.jpg">
-			<h1>@visshiisort</h1>
-		</header>
-		<ul>
-			<li>
-				<a href="https://www.instagram.com/visshiisort/">
-					<img src="./images/inst.svg" alt="Instagram" width="20">
-				Instagram</a>
-			</li>
-			<li>
-				<a href="https://github.com/GutorovPavel">
-					<img src="./images/git.svg" alt="GitHub" width="20">
-				GitHub</a>
-			</li>
-			<li>
-				<a href="https://t.me/visshiisort">
-					<img src="./images/telegram.svg" alt="Telegram" width="20">
-				Telegram</a>
-			</li>
-			<li>
-				<a href="https://vk.com/visshiisort31">
-				<img src="./images/vk.svg" alt="VK" width="20">
-				ВКонтакте</a>
-		</ul>
+		<main class = "animated">
+			<header>
+				<img src="./images/me.jpg">
+				<h1>@visshiisort</h1>
+			</header>
+			<ul>
+				<li>
+					<a href="https://www.instagram.com/visshiisort/">
+						<img src="./images/inst.svg" alt="Instagram" width="20">
+					Instagram</a>
+				</li>
+				<li>
+					<a href="https://github.com/GutorovPavel">
+						<img src="./images/git.svg" alt="GitHub" width="20">
+					GitHub</a>
+				</li>
+				<li>
+					<a href="https://t.me/visshiisort">
+						<img src="./images/telegram.svg" alt="Telegram" width="20">
+					Telegram</a>
+				</li>
+				<li>
+					<a href="https://vk.com/visshiisort31">
+					<img src="./images/vk.svg" alt="VK" width="20">
+					ВКонтакте</a>
+			</ul>
+		</main>
 	</body>
 </html>

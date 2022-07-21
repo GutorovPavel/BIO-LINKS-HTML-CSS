@@ -9,6 +9,16 @@ body {
 	background-size: cover;
 }
 
+main {
+	position: relative;
+}
+
+main.animated {
+	opacity: 0;
+	/*filter: blur(40px);*/
+	transition: opacity 2s ease-in-out;
+}
+
 header {
 	margin-top: 20px;
 	text-align: center;
@@ -47,12 +57,12 @@ ul {
 
 ul > li {
 	background-color: #fffa;
+    backdrop-filter: blur(10px) saturate(160%) contrast(180%);	
+    -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);	
 	border-radius: 10em;
 	padding: 1em;
 	margin: 0.8em;
 	box-shadow: black 0px 2px 6px 0px;
-    backdrop-filter: blur(10px) saturate(160%) contrast(180%);	
-    -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);	
 }
 
 ul > li > a {
